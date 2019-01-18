@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ConversaActivity">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_conversa">
+    </include>
+
+    <ListView
+        android:id="@+id/listaConversas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/toolbar_conversa"
+        android:layout_above="@+id/layout_mensagens">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/layout_mensagens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/branco"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/campoMensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Digite aqui..."
+            android:textColor="@color/preto"
+            android:textColorHint="@color/cinza"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/botaoEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:theme="@style/botaoMensagens"/>
+    </LinearLayout>
+</RelativeLayout>

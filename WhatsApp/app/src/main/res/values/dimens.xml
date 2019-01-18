@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="larguraLogo">201dp</dimen>
+    <dimen name="alturaLogo">163dp</dimen>
+    <dimen name="larguraCampos">339dp</dimen>
+    <dimen name="larguraCamposPaisArea">55dp</dimen>
+    <dimen name="larguraCampoTelefone">197dp</dimen>
+    <dimen name="larguraCampoCodigo">181dp</dimen>
+    <dimen name="larguraBotoes">257dp</dimen>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/configuracoes"
+        android:title="@string/configuracoes"
+        android:orderInCategory="100" app:showAsAction="never" app:actionViewClass="android.support.v7.widget.Toolbar">
+    </item>
+    <item
+        android:id="@+id/desconectar"
+        android:title="@string/desconectar"
+        android:orderInCategory="200" app:showAsAction="never" app:actionViewClass="android.support.v7.widget.Toolbar"/>
+    <item android:id="@+id/pesquisar"
+          android:title="@string/pesquisar"
+          android:tooltipText="@string/pesquisar"
+          android:orderInCategory="300" app:showAsAction="always"
+          android:icon="@drawable/ic_search"/>
+    <item android:id="@+id/adicionarContato"
+          android:title="@string/adicionarContato"
+          android:tooltipText="@string/adicionarContato"
+          android:orderInCategory="400" app:showAsAction="always"
+          android:icon="@drawable/ic_person_add"/>
+    <item android:id="@+id/status"
+          android:icon="@drawable/ic_donut_large"
+          android:title="@string/status"
+          android:orderInCategory="50"
+          android:tooltipText="@string/status"
+          app:showAsAction="always"
+        />
+</menu>
